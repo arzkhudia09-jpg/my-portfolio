@@ -1,45 +1,71 @@
-# my-portfolio
-My first HTML CSS portfolio website
+# ARZ Portfolio Website
 
-# ARZ Khudia — Security Enthusiast & Front-End
+A responsive personal portfolio website built with pure HTML and CSS.
 
-**Open to Opportunities | Web Development | Cybersecurity Learner**
+This project introduces who I am, what I am learning, and how to contact me for internship or project opportunities.
 
-Welcome to my Portfolio! I’m a passionate developer building solid foundations in web technologies and cybersecurity. I enjoy crafting clean, responsive UIs and exploring the world of ethical hacking. :contentReference[oaicite:1]{index=1}
+## Overview
 
----
+This portfolio highlights:
 
-## 👨‍💻 About Me
+- A personal introduction and learning focus
+- Core skills in front-end and cybersecurity fundamentals
+- A featured project link
+- Contact and social profiles
+- Resume access
 
-I’m an aspiring **ethical hacker and front-end developer** from India, focused on:
+## Tech Stack
 
-- **Responsive website development** using HTML & CSS
-- **Learning Python** for automation and scripting
-- **Exploring Kali Linux** and essential security tools
-- **Understanding web & application security fundamentals**
+- HTML5
+- CSS3
 
-I’m actively learning, building, and seeking challenges that help me grow. :contentReference[oaicite:2]{index=2}
+## Features
 
----
+- Responsive layout for desktop and mobile
+- Glassmorphism-style cards with gradient theme
+- Dedicated sections: About, Core Skills, Projects, Contact
+- External links for LinkedIn, GitHub, email, and resume
 
-## 🚀 Skills & Tools
+## Project Structure
 
-### Languages  
-- HTML  
-- CSS  
-- Python (learning)
+```text
+my-portfolio/
+|-- index.html
+|-- index.css
+|-- resume.pdf
+`-- README.md
+```
 
-### Tools & Technologies  
-- Kali Linux (ethical hacking fundamentals)
-- Browser DevTools
-- Version Control (Git & GitHub)
+## Getting Started
 
-> I’m continuously upskilling — next on my roadmap is deeper networking concepts, Python automation, and real-world security workflows.
+1. Clone or download this repository.
+2. Open the project folder.
+3. Launch `index.html` in your browser.
 
----
+No build tools or dependencies are required.
 
-## 🧠 What I’m Building
+## Customization
 
-My portfolio currently showcases the foundation of my journey — with more projects coming soon!
+To personalize this portfolio:
 
-Here’s a high-level diagram of the **development → deployment → showcase flow** I follow:
+- Update text/content in `index.html`
+- Modify styles in `index.css`
+- Replace `resume.pdf` with your latest resume
+- Update social and project links in the HTML
+
+## Contact
+
+- LinkedIn: <https://www.linkedin.com/in/arz-kumar-399871344>
+- GitHub: <https://github.com/arzkhudia09-jpg>
+- Email: <mailto:arzkhudia@gmail.com>
+
+## Future Improvements
+
+- Add more project cards with screenshots
+- Improve accessibility and semantic HTML usage
+- Add light JavaScript interactions (theme toggle, animations)
+- Publish with GitHub Pages or Netlify
+
+## License
+
+This project is for personal portfolio and learning purposes.
