@@ -877,6 +877,7 @@ section[id] {
 .profile-frame {
   position: relative;
   width: min(100%, 390px);
+  aspect-ratio: 0.78;
   overflow: hidden;
   border: 1px solid rgba(117, 184, 200, 0.3);
   border-radius: 1.7rem;
@@ -885,8 +886,10 @@ section[id] {
 }
 
 .profile-frame > img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 0.78;
+  height: 100%;
   object-fit: cover;
   object-position: center 38%;
 }
