@@ -1,57 +1,52 @@
-# ARZ Portfolio Website
+# ARZ Portfolio
 
-A responsive personal portfolio website built with pure HTML and CSS.
+A responsive static portfolio showcasing ARZ's software projects, internship work, and cybersecurity learning.
 
-This project introduces who I am, what I am learning, and how to contact me for internship or project opportunities.
-
-## Overview
-
-This portfolio highlights:
-
-- A personal introduction and learning focus
-- Core skills in front-end and cybersecurity fundamentals
-- A featured project link
-- Contact and social profiles
-- Resume access
-
-## Tech Stack
+## Built with
 
 - HTML5
 - CSS3
+- Vanilla JavaScript
 
-## Features
+No build system, framework, or runtime dependency is required.
 
-- Responsive layout for desktop and mobile
-- Glassmorphism-style cards with gradient theme
-- Dedicated sections: About, Core Skills, Projects, Contact
-- External links for LinkedIn, GitHub, email, and resume
+## Sections
 
-## Project Structure
+- Profile, About, and Technical Skills
+- Featured projects, including Avyrix (live MVP only; its source repository is private)
+- Separate IICT and ScholarX internship project cards
+- Linux Reverse Shell Detector prototype
+- Certificates with accessible image previews
+- Practical learning, résumé download, and contact links
+
+Project descriptions and technology labels are based on the available public repositories, source code, and certificate assets. Deployment availability may change independently of this site.
+
+## Project structure
 
 ```text
 my-portfolio/
 |-- index.html
 |-- index.css
-|-- resume.pdf
+|-- script.js
+|-- favicon.svg
+|-- assests/
+|   |-- certificates/
+|   |-- profile_image/
+|   |-- projects/
+|   `-- resume/
 `-- README.md
 ```
 
-## Getting Started
+## Run locally
 
-1. Clone or download this repository.
-2. Open the project folder.
-3. Launch `index.html` in your browser.
+Open `index.html` in a browser, or serve the folder with any static HTTP server. GitHub Pages can host the site without a build step.
 
-No build tools or dependencies are required.
+## Update content
 
-## Customization
-
-To personalize this portfolio:
-
-- Update text/content in `index.html`
-- Modify styles in `index.css`
-- Replace `resume.pdf` with your latest resume
-- Update social and project links in the HTML
+- Edit section content and links in `index.html`.
+- Edit layout, responsive styles, and reduced-motion behavior in `index.css`.
+- Edit the mobile navigation, section observer, and certificate preview behavior in `script.js`.
+- Replace images or the résumé in the corresponding `assests/` subfolder, keeping the filenames or updating their references in `index.html`.
 
 ## Contact
 
@@ -59,13 +54,4 @@ To personalize this portfolio:
 - GitHub: <https://github.com/arzkhudia09-jpg>
 - Email: <mailto:arzkhudia@gmail.com>
 
-## Future Improvements
-
-- Add more project cards with screenshots
-- Improve accessibility and semantic HTML usage
-- Add light JavaScript interactions (theme toggle, animations)
-- Publish with GitHub Pages or Netlify
-
-## License
-
-This project is for personal portfolio and learning purposes.
+This portfolio is for personal, educational, and internship applications.

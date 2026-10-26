@@ -5,28 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ARZ — aspiring cybersecurity professional and Python web developer portfolio."
+      content="ARZ is an aspiring cybersecurity professional and Python web developer, sharing verified projects, internship work, and practical learning."
     />
     <title>ARZ | Cybersecurity & Python Web Developer</title>
+    <meta name="theme-color" content="#080f1b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ARZ | Cybersecurity & Python Web Developer" />
+    <meta
+      property="og:description"
+      content="Projects, internship work, and practical cybersecurity learning by ARZ."
+    />
+    <meta
+      property="og:image"
+      content="https://arzkhudia09-jpg.github.io/my-portfolio/assests/profile_image/profile-picture.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav container" aria-label="Main navigation">
         <a href="#home" class="brand" aria-label="ARZ home"><span>ARZ</span></a>
-        <div class="nav-links">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="primary-navigation">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#internships">Internships</a>
+          <a href="#cybersecurity-projects">Cybersecurity</a>
+          <a href="#practice">Practice</a>
           <a href="#certifications">Certifications</a>
-          <a href="#cybersecurity-practice">Cybersecurity Practice</a>
+          <a href="#resume">Résumé</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -35,48 +61,40 @@
     <main>
       <section id="home" class="hero container">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span>Open to internships and projects</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Developer • Security learner</p>
           <h1>
-            Aspiring <span>cybersecurity</span> professional and
-            <span>Python web developer</span>.
+            I’m <span>ARZ</span> — building practical software with a security mindset.
           </h1>
           <p class="lead">
-            I enjoy building web applications, understanding security weaknesses,
-            working with Linux and networking fundamentals, and turning learning into practical,
-            hands-on projects.
+            I build with Python, Flask, and the web while developing hands-on skills in
+            cybersecurity, Linux, and application security. This portfolio shares projects and
+            learning work I can show and explain.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Projects</a>
-            <a class="btn btn-secondary" href="#cybersecurity-practice">Cybersecurity Practice</a>
-            <a class="btn btn-tertiary" href="#contact">Contact</a>
+            <a class="btn btn-primary" href="#projects">Explore Projects</a>
+            <a class="btn btn-secondary" href="assests/resume/resume.pdf" download>Download Résumé</a>
           </div>
-          <ul class="hero-points" aria-label="Professional summary">
-            <li>Python, Flask, HTML, CSS, and JavaScript</li>
-            <li>Linux, networking, and cybersecurity fundamentals</li>
-            <li>Hands-on learning through project work and security practice</li>
-          </ul>
+          <div class="hero-socials" aria-label="Professional links">
+            <a href="https://github.com/arzkhudia09-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/arz-kumar-399871344" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:arzkhudia@gmail.com">Email</a>
+          </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Profile highlights">
-          <div class="panel-card">
-            <p class="panel-label">Focus</p>
-            <h2>Application security + practical web development</h2>
-            <div class="stat-grid">
+        <aside class="hero-panel profile-panel" aria-label="Profile">
+          <div class="profile-frame">
+            <img
+              src="assests/profile_image/profile-picture.png"
+              alt="Portrait of ARZ"
+              width="1086"
+              height="1480"
+              fetchpriority="high"
+            />
+            <div class="profile-caption">
+              <span class="profile-status" aria-hidden="true"></span>
               <div>
-                <strong>Python</strong>
-                <span>Flask apps</span>
-              </div>
-              <div>
-                <strong>Web</strong>
-                <span>HTML, CSS, JS</span>
-              </div>
-              <div>
-                <strong>Security</strong>
-                <span>Ethical hacking basics</span>
-              </div>
-              <div>
-                <strong>Linux</strong>
-                <span>Networking & tools</span>
+                <strong>ARZ</strong>
+                <span>Python web development · cybersecurity learning</span>
               </div>
             </div>
           </div>
@@ -117,6 +135,7 @@
             <h3>Programming</h3>
             <ul>
               <li>Python</li>
+              <li>C</li>
               <li>JavaScript</li>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -127,9 +146,10 @@
             <h3>Web Development</h3>
             <ul>
               <li>Flask</li>
+              <li>SQLAlchemy</li>
               <li>Responsive web design</li>
-              <li>Frontend development</li>
-              <li>UI implementation</li>
+              <li>Jinja templates</li>
+              <li>SQLite / PostgreSQL</li>
             </ul>
           </article>
 
@@ -137,9 +157,9 @@
             <h3>Cybersecurity</h3>
             <ul>
               <li>Web application security</li>
-              <li>Ethical hacking fundamentals</li>
-              <li>Vulnerability assessment</li>
-              <li>Secure authentication concepts</li>
+              <li>Authorized vulnerability assessment</li>
+              <li>Authentication and session concepts</li>
+              <li>Phishing awareness</li>
             </ul>
           </article>
 
@@ -147,19 +167,20 @@
             <h3>Linux and Networking</h3>
             <ul>
               <li>Kali Linux</li>
-              <li>Networking basics</li>
-              <li>Enumeration and reconnaissance</li>
-              <li>System and tool familiarity</li>
+              <li>Linux / ProcFS fundamentals</li>
+              <li>Networking fundamentals</li>
+              <li>Reconnaissance and enumeration</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3>Security Tools</h3>
+            <h3>Machine Learning & Tools</h3>
             <ul>
+              <li>Pandas and scikit-learn</li>
+              <li>NLTK and TF-IDF</li>
+              <li>Matplotlib and Seaborn</li>
               <li>Nmap</li>
-              <li>Burp Suite</li>
-              <li>Git and GitHub</li>
-              <li>Deployment workflows</li>
+              <li>Burp Suite, WhatWeb, Nikto, Gobuster</li>
             </ul>
           </article>
         </div>
@@ -168,30 +189,27 @@
       <section id="projects" class="section container">
         <div class="section-heading">
           <p class="section-kicker">Projects</p>
-          <h2>Selected work that demonstrates my learning and building process.</h2>
+          <h2>Selected builds, described from the work that is available to inspect.</h2>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-visual visual-portfolio">
-              <span>Portfolio</span>
+        <div class="project-grid featured-grid">
+          <article class="project-card featured-project">
+            <div class="project-art avyrix-art" aria-hidden="true">
+              <span class="art-orbit orbit-one"></span>
+              <span class="art-orbit orbit-two"></span>
+              <span class="art-monogram">A</span>
+              <span class="art-caption">Live MVP</span>
             </div>
             <div class="project-content">
-              <div class="project-meta">
-                <span class="pill">Portfolio Website</span>
-              </div>
-              <h3>Personal portfolio</h3>
+              <div class="project-meta"><span class="pill">Featured · Live MVP</span></div>
+              <h3>Avyrix</h3>
               <p>
-                A responsive portfolio website designed to present my learning journey, technical skills,
-                projects, and cybersecurity-focused interests.
+                Avyrix is shared here through its public live MVP. Its source repository is private,
+                so implementation details and technology tags are intentionally not published in this portfolio.
               </p>
-              <ul>
-                <li>Responsive layout and developer-focused styling</li>
-                <li>Sections for about, skills, projects, certifications, and contact</li>
-                <li>Clear navigation and direct external links</li>
-              </ul>
               <div class="action-row">
-                <a class="btn btn-small btn-primary" href="https://arzkhudia09-jpg.github.io/my-portfolio/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="btn btn-small btn-primary" href="https://avyrix.onrender.com/" target="_blank" rel="noopener noreferrer">Explore Live MVP</a>
+                <span class="project-note">Source code is private</span>
               </div>
             </div>
           </article>
@@ -201,6 +219,8 @@
               class="project-visual"
               src="assests/projects/task-tracker/task-tracker-dashboard.png"
               alt="Flask Task Tracker dashboard"
+              loading="lazy"
+              decoding="async"
             />
             <div class="project-content">
               <div class="project-meta">
@@ -217,9 +237,10 @@
                 <li>Add, update, complete, and delete tasks</li>
                 <li>Separate pending and completed task views</li>
               </ul>
+              <div class="tag-list" aria-label="Technologies"><span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite / PostgreSQL</span></div>
               <div class="action-row">
-                <a class="btn btn-small btn-primary" href="https://flask-task-tracker-l9oj.onrender.com/" target="_blank" rel="noreferrer">Live Demo</a>
-                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Flask-Task_Tracker.git" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-small btn-primary" href="https://flask-task-tracker-l9oj.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Flask-Task_Tracker" target="_blank" rel="noopener noreferrer">Source Code</a>
               </div>
             </div>
           </article>
@@ -229,6 +250,8 @@
               class="project-visual"
               src="assests/projects/password%20analyzer/password-analyzer-interface.png"
               alt="Human Psychology Password Analyzer interface"
+              loading="lazy"
+              decoding="async"
             />
             <div class="project-content">
               <div class="project-meta">
@@ -236,47 +259,141 @@
               </div>
               <h3>Human Psychology Password Analyzer</h3>
               <p>
-                A browser-based password analyzer focused on human-created patterns such as sequential numbers,
-                common words, repeated characters, and predictable years.
+                A browser-based password analyzer focused on human-created patterns such as sequences, common
+                strings like “password”, repeated characters, and predictable years.
               </p>
               <ul>
-                <li>Real-time scoring from 0 to 100</li>
-                <li>Strength classification: Weak, Medium, or Strong</li>
-                <li>Pattern detection with clear user feedback</li>
-                <li>Suggestions for improving weak passwords</li>
+                <li>Scores length and selected character patterns</li>
+                <li>Flags sequences, repeated characters, name-like forms, and years</li>
+                <li>Returns a Weak, Medium, or Strong label with suggestions</li>
               </ul>
+              <p class="limitation-note">An educational heuristic, not a password-security guarantee or breach check.</p>
+              <div class="tag-list" aria-label="Technologies"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
               <div class="action-row">
-                <a class="btn btn-small btn-primary" href="https://arzkhudia09-jpg.github.io/Human-Psychology-Password-Analyzer/" target="_blank" rel="noreferrer">Live Demo</a>
-                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Human-Psychology-Password-Analyzer.git" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-small btn-primary" href="https://arzkhudia09-jpg.github.io/Human-Psychology-Password-Analyzer/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Human-Psychology-Password-Analyzer" target="_blank" rel="noopener noreferrer">Source Code</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="case-studies" class="section container">
+      <section id="internships" class="section container">
         <div class="section-heading">
-          <p class="section-kicker">Case Studies</p>
-          <h2>Short project reflections grounded in the work I have built.</h2>
+          <p class="section-kicker">Internship Projects & Experience</p>
+          <h2>Separate project work completed during IICT and ScholarX internships.</h2>
         </div>
 
-        <div class="case-grid">
-          <article class="case-card">
-            <h3>Flask Task Tracker</h3>
-            <p><strong>Overview:</strong> A practical Flask application for tracking tasks across personal work and study routines.</p>
-            <p><strong>Problem and objective:</strong> Create a simple but reliable system to manage tasks with login protection and separate pending/completed flows.</p>
-            <p><strong>Implementation:</strong> Built with Flask and SQLAlchemy, with user accounts, hashed passwords, session-based authentication, and persistent task management.</p>
-            <p><strong>Actual features:</strong> Registration, login, add/update/complete/delete task actions, and health check route.</p>
-            <p><strong>Learning outcome:</strong> Strengthened understanding of authentication patterns, data persistence, and web app deployment.</p>
-          </article>
+        <section class="internship-group" aria-labelledby="iict-projects-title">
+          <div class="internship-heading">
+            <div>
+              <p class="section-kicker">IICT · Artificial Intelligence & Machine Learning</p>
+              <h3 id="iict-projects-title">IICT Internship Projects</h3>
+              <p>Two independent NLP and text-classification projects named on the internship certificate.</p>
+            </div>
+            <a class="text-link" href="assests/certificates/IICT_internship_complition_certificate.jpg" target="_blank" rel="noopener noreferrer">View IICT certificate</a>
+          </div>
+          <div class="internship-grid">
+            <article class="project-card internship-card">
+              <div class="project-art news-art" aria-hidden="true"><span class="art-label">NLP / TEXT CLASSIFICATION</span><span class="art-mark">01</span></div>
+              <div class="project-content">
+                <div class="project-meta"><span class="pill">IICT Internship</span></div>
+                <h4>AI-Powered Fake News Detection Using Text Classification</h4>
+                <p>An offline machine-learning workflow that cleans labeled news text, builds TF-IDF features, and includes training and evaluation functions for Logistic Regression, KNN, Random Forest, and an MLP classifier. The entry point currently runs the Random Forest path.</p>
+                <div class="tag-list" aria-label="Technologies"><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>NLTK</span><span>TF-IDF</span></div>
+                <div class="action-row">
+                  <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/AI_Fake_News_Detection" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                </div>
+              </div>
+            </article>
 
-          <article class="case-card">
-            <h3>Human Psychology Password Analyzer</h3>
-            <p><strong>Overview:</strong> A lightweight security awareness tool designed to analyze patterns people commonly use in passwords.</p>
-            <p><strong>Problem and objective:</strong> Move beyond basic length and symbol checks and focus on realistic human behavior patterns that make passwords predictable.</p>
-            <p><strong>Implementation:</strong> Built in HTML, CSS, and JavaScript with a pattern detection engine and scoring flow in the browser.</p>
-            <p><strong>Actual features:</strong> Sequential numbers, common words, repeated characters, predictable years, real-time scoring, strength feedback, and suggestions.</p>
-            <p><strong>Limitation:</strong> It is an educational analysis tool and does not guarantee a password is secure; it highlights patterns and encourages better password habits.</p>
+            <article class="project-card internship-card">
+              <div class="project-art email-art" aria-hidden="true"><span class="art-label">EMAIL / NLP</span><span class="art-mark">@</span></div>
+              <div class="project-content">
+                <div class="project-meta"><span class="pill">IICT Internship</span></div>
+                <h4>AI-Driven Phishing Email Detection</h4>
+                <p>Dataset-based email preprocessing and TF-IDF classification code, with functions for model evaluation and feature-importance output. The repository entry point currently leaves training calls commented out, so this is presented as an offline project rather than a live detector.</p>
+                <div class="tag-list" aria-label="Technologies"><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>NLTK</span><span>TF-IDF</span></div>
+                <div class="action-row">
+                  <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/AI_Phishing_Email_Detection" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="internship-group" aria-labelledby="scholarx-projects-title">
+          <div class="internship-heading">
+            <div>
+              <p class="section-kicker">ScholarX · Cybersecurity</p>
+              <h3 id="scholarx-projects-title">ScholarX Internship Projects</h3>
+              <p>Three distinct projects associated with a one-month cybersecurity internship.</p>
+            </div>
+            <a class="text-link" href="assests/certificates/arz-scholarx-certificate.jpg" target="_blank" rel="noopener noreferrer">View ScholarX certificate</a>
+          </div>
+          <div class="internship-grid">
+            <article class="project-card internship-card">
+              <div class="project-art phishaware-art" aria-hidden="true"><span class="art-label">AWARENESS / SIMULATION</span><span class="art-mark">PA</span></div>
+              <div class="project-content">
+                <div class="project-meta"><span class="pill">Live demo</span></div>
+                <h4>PhishAware</h4>
+                <p>A Flask-based phishing-awareness learning site with sample simulations, educational material, a quiz, and a URL checker that scores submitted URLs using heuristic indicators. It is an awareness aid, not a definitive URL verdict.</p>
+                <div class="tag-list" aria-label="Technologies"><span>Python</span><span>Flask</span><span>Jinja</span><span>HTML / CSS / JavaScript</span></div>
+                <div class="action-row">
+                  <a class="btn btn-small btn-primary" href="https://phishaware-2dwn.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/PhishAware" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card internship-card">
+              <div class="project-art auth-art" aria-hidden="true"><span class="art-label">AUTHENTICATION / AUDIT</span><span class="art-mark">SA</span></div>
+              <div class="project-content">
+                <div class="project-meta"><span class="pill">Live demo</span></div>
+                <h4>Secure Auth Audit System</h4>
+                <p>A Flask authentication demonstration with registration and login, password-policy checks, hashed passwords, CSRF protection, rate limiting, session controls, and authentication event logging. It demonstrates selected safeguards; it is not a complete security audit.</p>
+                <div class="tag-list" aria-label="Technologies"><span>Python</span><span>Flask</span><span>Flask-WTF</span><span>Flask-Limiter</span><span>SQLAlchemy</span></div>
+                <div class="action-row">
+                  <a class="btn btn-small btn-primary" href="https://secure-auth-audit-system.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/secure-auth-audit-system" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card internship-card">
+              <div class="project-art assessment-art" aria-hidden="true"><span class="art-label">AUTHORIZED ASSESSMENT</span><span class="art-mark">03</span></div>
+              <div class="project-content">
+                <div class="project-meta"><span class="pill">Source only</span></div>
+                <h4>Web App Vulnerability Assessment</h4>
+                <p>A documented assessment of a self-owned Flask task tracker, covering reconnaissance, service and technology identification, scanning, and manual input testing. The repository contains assessment notes and evidence; it is not a general-purpose scanning tool.</p>
+                <div class="tag-list" aria-label="Tools documented"><span>Nmap</span><span>WhatWeb</span><span>Nikto</span><span>Gobuster</span><span>Burp Suite</span></div>
+                <div class="action-row">
+                  <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Web-App-Vulnerability-Assessment" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="cybersecurity-projects" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Cybersecurity Projects</p>
+          <h2>Focused work in authorized assessment and Linux detection engineering.</h2>
+        </div>
+        <div class="security-project-grid">
+          <article class="project-card security-project-card">
+            <div class="project-art detector-art" aria-hidden="true"><span class="art-label">C / LINUX / PROCFS</span><span class="art-mark">RS</span></div>
+            <div class="project-content">
+              <div class="project-meta"><span class="pill">Prototype · Heuristic detector</span></div>
+              <h3>Reverse Shell Detector</h3>
+              <p>A Linux command-line prototype written in C. It enumerates processes through <code>/proc</code>, reads process metadata, and applies rule-based scoring for executable paths in temporary directories, deleted executables, selected parent process names, and selected executable names.</p>
+              <p class="limitation-note">It reports process-level heuristics only; the current version does not inspect network connections, correlate sockets, block activity, or provide real-time protection.</p>
+              <div class="tag-list" aria-label="Technologies"><span>C</span><span>Linux</span><span>ProcFS</span><span>POSIX APIs</span></div>
+              <div class="action-row">
+                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/reverse-shell-detector" target="_blank" rel="noopener noreferrer">View Source Code</a>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -289,60 +406,122 @@
 
         <div class="cert-grid">
           <article class="cert-card">
-            <img src="assests/certificates/IICT_internship_complition_certificate.jpg" alt="IICT AI/ML internship completion certificate" />
+            <button
+              class="certificate-preview"
+              type="button"
+              data-lightbox-src="assests/certificates/IICT_internship_complition_certificate.jpg"
+              data-lightbox-alt="IICT certificate of internship for Arz's 45-day summer internship in Artificial Intelligence and Machine Learning"
+              aria-label="Enlarge IICT AI/ML internship certificate"
+            >
+              <img src="assests/certificates/IICT_internship_complition_certificate.jpg" alt="" loading="lazy" decoding="async" />
+            </button>
             <div class="cert-body">
-              <h3>IICT AI/ML Internship Completion Certificate</h3>
-              <p class="issuer">Issued by IICT</p>
-              <p>Completion certificate for internship work in AI and machine learning learning pathways.</p>
-              <a href="assests/certificates/IICT_internship_complition_certificate.jpg" target="_blank" rel="noreferrer">View certificate</a>
+              <h3>Certificate of Internship · AI & Machine Learning</h3>
+              <p class="issuer">Indian Institute of Computing and Technology (IICT)</p>
+              <p>45-day summer internship, 15 June–30 July 2026. The certificate names the Fake News Detection and Phishing Email Detection projects.</p>
+              <a href="assests/certificates/IICT_internship_complition_certificate.jpg" target="_blank" rel="noopener noreferrer">Open original certificate</a>
             </div>
           </article>
 
           <article class="cert-card">
-            <img src="assests/certificates/tryhackme-hacker-holiday-certificate.png" alt="TryHackMe Hacker Holiday completion certificate" />
+            <button
+              class="certificate-preview"
+              type="button"
+              data-lightbox-src="assests/certificates/arz-scholarx-certificate.jpg"
+              data-lightbox-alt="ScholarX certificate of completion for a one-month cybersecurity internship"
+              aria-label="Enlarge ScholarX cybersecurity internship certificate"
+            >
+              <img src="assests/certificates/arz-scholarx-certificate.jpg" alt="" loading="lazy" decoding="async" />
+            </button>
             <div class="cert-body">
-              <h3>TryHackMe Hacker Holiday Completion Certificate</h3>
-              <p class="issuer">Issued by TryHackMe</p>
-              <p>Completion badge for the Hacker Holiday challenge path, reflecting hands-on cybersecurity learning.</p>
-              <a href="assests/certificates/tryhackme-hacker-holiday-certificate.png" target="_blank" rel="noreferrer">View certificate</a>
+              <h3>Certificate of Completion · Cybersecurity Internship</h3>
+              <p class="issuer">ScholarX</p>
+              <p>One-month cybersecurity internship certificate dated 11 June 2026.</p>
+              <a href="https://www.scholarx.digital/verify/SX-2026-A3BF7B3B" target="_blank" rel="noopener noreferrer">Verify certificate</a>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              class="certificate-preview"
+              type="button"
+              data-lightbox-src="assests/certificates/tryhackme-hacker-holiday-certificate.png"
+              data-lightbox-alt="TryHackMe Hacker Holidays certificate of completion awarded to ARZ"
+              aria-label="Enlarge TryHackMe Hacker Holidays certificate"
+            >
+              <img src="assests/certificates/tryhackme-hacker-holiday-certificate.png" alt="" loading="lazy" decoding="async" />
+            </button>
+            <div class="cert-body">
+              <h3>Hacker Holidays · Certificate of Completion</h3>
+              <p class="issuer">TryHackMe · Issued 13 August 2026</p>
+              <p>Certificate of completion for the Hacker Holidays learning event.</p>
+              <a href="assests/certificates/tryhackme-hacker-holiday-certificate.png" target="_blank" rel="noopener noreferrer">Open original certificate</a>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              class="certificate-preview"
+              type="button"
+              data-lightbox-src="assests/certificates/Ethical_HackingCompletion.png"
+              data-lightbox-alt="Tutedude Ethical Hacking course certificate of completion awarded to ARZ on 4 July 2026"
+              aria-label="Enlarge Tutedude Ethical Hacking completion certificate"
+            >
+              <img src="assests/certificates/Ethical_HackingCompletion.png" alt="" loading="lazy" decoding="async" />
+            </button>
+            <div class="cert-body">
+              <h3>Ethical Hacking · Course Completion</h3>
+              <p class="issuer">Tutedude · 4 July 2026</p>
+              <p>Course completion certificate; presented as learning evidence, not a professional security qualification.</p>
+              <a href="assests/certificates/Ethical_HackingCompletion.png" target="_blank" rel="noopener noreferrer">Open original certificate</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="cybersecurity-practice" class="section container">
+      <section id="practice" class="section container">
         <div class="section-heading">
-          <p class="section-kicker">Cybersecurity Practice</p>
-          <h2>Continuous learning across web security, Linux, and hands-on security fundamentals.</h2>
+          <p class="section-kicker">Practical Learning</p>
+          <h2>Practice grounded in project evidence and responsible learning.</h2>
         </div>
 
         <div class="practice-layout">
           <div class="practice-overview">
             <p>
-              My practice is grounded in the areas I am actively studying: Python web applications,
-              Linux environments, reconnaissance and enumeration, vulnerability awareness, and ethical
-              hacking fundamentals. I am building experience through practical challenges and project work,
-              especially in areas related to web application security and responsible testing methods.
+              My hands-on work includes documenting an assessment of my own Flask task tracker and
+              building a Linux process-inspection prototype. I also continue learning through TryHackMe
+              and introductory ethical-hacking study. Room-specific write-ups and screenshots are not
+              included here because none were supplied for this update.
             </p>
             <div class="mini-list">
-              <span>Web application security</span>
-              <span>Linux fundamentals</span>
-              <span>Networking concepts</span>
+              <span>Authorized assessment</span>
+              <span>Linux process inspection</span>
+              <span>Web security fundamentals</span>
               <span>TryHackMe learning</span>
-              <span>Ethical hacking basics</span>
-              <span>Hands-on security practice</span>
+              <span>Ethical hacking coursework</span>
             </div>
           </div>
 
           <div class="practice-card">
-            <h3>Current focus</h3>
+            <h3>Responsible practice</h3>
             <ul>
-              <li>Understanding how web apps handle authentication and sessions</li>
-              <li>Learning security weaknesses in application logic and user flows</li>
-              <li>Practicing Linux and networking skills in a practical context</li>
-              <li>Improving research, analysis, and documentation through project work</li>
+              <li>Assess only systems I own or have explicit permission to test</li>
+              <li>Describe the scope and limitations of each assessment</li>
+              <li>Treat heuristic checks as signals, not guarantees</li>
+              <li>Keep improving through documented projects and study</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section container resume-section">
+        <div class="resume-panel">
+          <div>
+            <p class="section-kicker">Résumé</p>
+            <h2>See my background and current experience.</h2>
+            <p>The original résumé file is available to view or download.</p>
+          </div>
+          <a class="btn btn-primary" href="assests/resume/resume.pdf" download>Download Résumé</a>
         </div>
       </section>
 
@@ -357,17 +536,13 @@
             <span>✉</span>
             Email
           </a>
-          <a href="https://www.linkedin.com/in/arz-kumar-399871344" target="_blank" rel="noreferrer" class="contact-link">
+          <a href="https://www.linkedin.com/in/arz-kumar-399871344" target="_blank" rel="noopener noreferrer" class="contact-link">
             <span>in</span>
             LinkedIn
           </a>
-          <a href="https://github.com/arzkhudia09-jpg" target="_blank" rel="noreferrer" class="contact-link">
+          <a href="https://github.com/arzkhudia09-jpg" target="_blank" rel="noopener noreferrer" class="contact-link">
             <span>⌘</span>
             GitHub
-          </a>
-          <a href="assests/resume.pdf" target="_blank" rel="noreferrer" class="contact-link">
-            <span>↗</span>
-            Resume
           </a>
         </div>
       </section>
@@ -378,5 +553,11 @@
         <p>Designed and built to showcase practical learning, security interest, and application-building work.</p>
       </div>
     </footer>
+    <dialog class="certificate-dialog" aria-label="Certificate preview">
+      <button class="dialog-close" type="button" aria-label="Close certificate preview">×</button>
+      <img class="dialog-image" src="" alt="" />
+      <p class="dialog-caption"></p>
+    </dialog>
+    <script src="script.js"></script>
   </body>
 </html>
