@@ -1,98 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>My POrtifolio</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <main class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ARZ — aspiring cybersecurity professional and Python web developer portfolio."
+    />
+    <title>ARZ | Cybersecurity & Python Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="ARZ home"><span>ARZ</span></a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#cybersecurity-practice">Cybersecurity Practice</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-        <!-- left side content -->
-        <span class="left-side">
-            <div class="tagline">
-                <div class="tagbox"><span class="tagbox-dot"></span>OPEN TO OPPORTUNITIES</div>
-                Front-end & Security Enthusiast
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Open to internships and projects</p>
+          <h1>
+            Aspiring <span>cybersecurity</span> professional and
+            <span>Python web developer</span>.
+          </h1>
+          <p class="lead">
+            I enjoy building web applications, understanding security weaknesses,
+            working with Linux and networking fundamentals, and turning learning into practical,
+            hands-on projects.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Projects</a>
+            <a class="btn btn-secondary" href="#cybersecurity-practice">Cybersecurity Practice</a>
+            <a class="btn btn-tertiary" href="#contact">Contact</a>
+          </div>
+          <ul class="hero-points" aria-label="Professional summary">
+            <li>Python, Flask, HTML, CSS, and JavaScript</li>
+            <li>Linux, networking, and cybersecurity fundamentals</li>
+            <li>Hands-on learning through project work and security practice</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel" aria-label="Profile highlights">
+          <div class="panel-card">
+            <p class="panel-label">Focus</p>
+            <h2>Application security + practical web development</h2>
+            <div class="stat-grid">
+              <div>
+                <strong>Python</strong>
+                <span>Flask apps</span>
+              </div>
+              <div>
+                <strong>Web</strong>
+                <span>HTML, CSS, JS</span>
+              </div>
+              <div>
+                <strong>Security</strong>
+                <span>Ethical hacking basics</span>
+              </div>
+              <div>
+                <strong>Linux</strong>
+                <span>Networking & tools</span>
+              </div>
             </div>
-            <h1 class="main-intro">
-                Hi, I'm <span class="highlight">ARZ</span>-building the foundation for <span class="highlight">Ethical Hacking , CyberSecurity and Web</span>
-            </h1>
-            <p class="intro-subtitle">
-                I work with <strong>HTML, CSS</strong>, and I am learning
-                <strong>Python</strong> and <strong>Kali Linux</strong> for ethical
-                hacking. I enjoy creating clean, focused UIs and strengthening my
-                fundamentals.
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>Curious, hands-on, and focused on learning by building.</h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-card">
+            <p>
+              I am developing my skills in Python, Flask, HTML, CSS, JavaScript, Linux,
+              networking, and cybersecurity fundamentals. My interest lies in understanding how
+              web applications work, where weaknesses appear, and how to build more secure systems.
             </p>
-            <div class="link-button">
-                <a href="https://www.linkedin.com/in/arz-kumar-399871344" target="_blank" class="linkedin">LinkedIn</a>
-                <a href="https://github.com/arzkhudia09-jpg" target="_blank" class="github">Github</a>
-                <a href="resume.pdf" target="_blank" class="resume">Resume</a>
+          </div>
+          <div class="about-card">
+            <p>
+              I enjoy practical problem-solving, self-directed learning, and turning concepts into
+              working projects. My goal is to improve my technical foundation while continuing to grow
+              in application security, ethical hacking, and responsible development practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Technical foundation and practical learning areas.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Web Development</h3>
+            <ul>
+              <li>Flask</li>
+              <li>Responsive web design</li>
+              <li>Frontend development</li>
+              <li>UI implementation</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Cybersecurity</h3>
+            <ul>
+              <li>Web application security</li>
+              <li>Ethical hacking fundamentals</li>
+              <li>Vulnerability assessment</li>
+              <li>Secure authentication concepts</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Linux and Networking</h3>
+            <ul>
+              <li>Kali Linux</li>
+              <li>Networking basics</li>
+              <li>Enumeration and reconnaissance</li>
+              <li>System and tool familiarity</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Security Tools</h3>
+            <ul>
+              <li>Nmap</li>
+              <li>Burp Suite</li>
+              <li>Git and GitHub</li>
+              <li>Deployment workflows</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected work that demonstrates my learning and building process.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-portfolio">
+              <span>Portfolio</span>
             </div>
-            <div class="list">
-                <span><li>Based in India</li></span>    <span><li>Actively learning ethical hacking</li></span>
-                <span><li>Available for internships & projects</li></span>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Portfolio Website</span>
+              </div>
+              <h3>Personal portfolio</h3>
+              <p>
+                A responsive portfolio website designed to present my learning journey, technical skills,
+                projects, and cybersecurity-focused interests.
+              </p>
+              <ul>
+                <li>Responsive layout and developer-focused styling</li>
+                <li>Sections for about, skills, projects, certifications, and contact</li>
+                <li>Clear navigation and direct external links</li>
+              </ul>
+              <div class="action-row">
+                <a class="btn btn-small btn-primary" href="https://arzkhudia09-jpg.github.io/my-portfolio/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
             </div>
-            <section class="core-skill">
-                <p style="color: #9899be; margin: 5px;">SKILLS</p>
-                <h2 style="color: #fff; margin: 5px;">What I know</h2>
-                <ul style="color: #707d94; margin: 5px 15px; font-size: 15px;">
-                    <li>Web Application Security Testing</li>
-                    <li>Reconnaissance & Enumeration</li>
-                    <li>Vulnerability Assessment</li>
-                    <li>Basic Penetration Testing</li>
-                    <li>Secure Authentication Concepts</li>
-                    <li>Python, HTML5, CSS3, JavaScript</li>
-                    <li>Flask, Responsive Web Design, Frontend Development</li>
-                    <li>Kali Linux, Nmap, Burpsuite</li>
-                    <li>Git, GitHub, Render</li>
-                </ul>
-            </section>
-        </span>
-        
-        <!-- right side content -->
-        <span class="right-side">
-            <div class="about-skill">
-                        <section class="About">
-                        <p style="color: #9899be; margin: 5px;">ABOUT</p>
-                        <h2 style="color: #fff; margin: 5px;">Who am I?</h2>
-                        <p style="color: #707d94; font-size: 14px; margin: 5px; font-size: 15px;">
-                            I am an aspiring ethical hacker with a strong interest in
-                            <strong>Web technologies</strong> and <strong>Linux</strong>.
-                            Right now I am focused on building a solid base with HTML/CSS,
-                            then going deeper into Python, networking, and security tools.
-                        </p>
-                    </section>
-                        <section class="project">
-                    <p style="color: #9899be; margin: 5px;">PROJECTS</p>
-                    <h2 style="color: #fff; margin: 5px;">What I've built</h2>
-                    <div style="color: #707d94; margin: 5px; font-size: 16px; line-height: 1.6;">
-                        <p>• <strong>Portfolio Website</strong> — HTML5, CSS3. Designed to showcase projects, technical skills, and cybersecurity learning journey. <a style="font-size: 14px; text-decoration: none;" href="https://arzkhudia09-jpg.github.io/my-portfolio/" target="_blank">View Project</a></p>
-                        <p>• <strong>Human Psychology Password Analyzer</strong> — HTML5, CSS3, JavaScript. Analyzes password patterns and highlights common human-generated weaknesses. <a style="font-size: 14px; text-decoration: none;" href="https://arzkhudia09-jpg.github.io/Human-Psychology-Password-Analyzer/" target="_blank">View Project</a></p>
-                        <p>• <strong>Flask Calculator</strong> — Python, Flask, HTML5, CSS3, Render. Built a web calculator with backend Python logic and deployed it on Render. <a style="font-size: 14px; text-decoration: none;" href="https://flask-calculator-9sw9.onrender.com" target="_blank">View Project</a></p>
-                        <p>• <strong>Task Tracker Web App</strong> — Python, Flask, SQLite, HTML5, CSS3, Render. Developed a secure task tracking app with authentication, session management, and user-based task handling. <a style="font-size: 14px; text-decoration: none;" href="https://flask-task-tracker-l9oj.onrender.com/" target="_blank">View Project</a></p>
-                    </div>
-                </section>
-                <section class="contact">
-                    <p style="color: #9899be; margin: 5px;">CONTACT</p>
-                    <h2 style="color: #fff; margin: 5px;">Let us connect</h2>
-                    <p style="color: #707d94; margin: 5px; font-size: 15px;">
-                        Feel free to reach out to me for internships, projects, or just to say hi!
-                        You can contact me via email or linkedin at 
-                        <strong>
-                                <div class="contact-links">
-                                    <a href="mailto:arzkumar090@gmail.com" style=" text-decoration: none;"><span class="email-icon" style="margin: 10px 0 0 5px;">✉</span>Email</a>
-                                    <a href="https://www.linkedin.com/in/arz-kumar-399871344" target="_blank" rel="noreferrer" style="margin: 10px 0 0 5px; text-decoration: none;"><span class="linkedin-icon">🔗</span>LinkedIn</a>
-                                </div>
-                        </strong>
-                    </p>
-                </section>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-visual"
+              src="assests/projects/task-tracker/task-tracker-dashboard.png"
+              alt="Flask Task Tracker dashboard"
+            />
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Flask App</span>
+              </div>
+              <h3>Flask Task Tracker</h3>
+              <p>
+                A task-tracking web app built with Flask that includes authentication, task management,
+                and separate pending/completed flows.
+              </p>
+              <ul>
+                <li>User registration and login with hashed passwords</li>
+                <li>Session-based authentication</li>
+                <li>Add, update, complete, and delete tasks</li>
+                <li>Separate pending and completed task views</li>
+              </ul>
+              <div class="action-row">
+                <a class="btn btn-small btn-primary" href="https://flask-task-tracker-l9oj.onrender.com/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Flask-Task_Tracker.git" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
-                <div class="bottom-line">
-                    <div>Designed and built in pure HTML / CSS |</div>
-                    <div>Ready to learn, build and secure better <br>systems. </div>
-                </div>
-        </span>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-visual"
+              src="assests/projects/password%20analyzer/password-analyzer-interface.png"
+              alt="Human Psychology Password Analyzer interface"
+            />
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">JavaScript Tool</span>
+              </div>
+              <h3>Human Psychology Password Analyzer</h3>
+              <p>
+                A browser-based password analyzer focused on human-created patterns such as sequential numbers,
+                common words, repeated characters, and predictable years.
+              </p>
+              <ul>
+                <li>Real-time scoring from 0 to 100</li>
+                <li>Strength classification: Weak, Medium, or Strong</li>
+                <li>Pattern detection with clear user feedback</li>
+                <li>Suggestions for improving weak passwords</li>
+              </ul>
+              <div class="action-row">
+                <a class="btn btn-small btn-primary" href="https://arzkhudia09-jpg.github.io/Human-Psychology-Password-Analyzer/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="btn btn-small btn-secondary" href="https://github.com/arzkhudia09-jpg/Human-Psychology-Password-Analyzer.git" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="case-studies" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Case Studies</p>
+          <h2>Short project reflections grounded in the work I have built.</h2>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <h3>Flask Task Tracker</h3>
+            <p><strong>Overview:</strong> A practical Flask application for tracking tasks across personal work and study routines.</p>
+            <p><strong>Problem and objective:</strong> Create a simple but reliable system to manage tasks with login protection and separate pending/completed flows.</p>
+            <p><strong>Implementation:</strong> Built with Flask and SQLAlchemy, with user accounts, hashed passwords, session-based authentication, and persistent task management.</p>
+            <p><strong>Actual features:</strong> Registration, login, add/update/complete/delete task actions, and health check route.</p>
+            <p><strong>Learning outcome:</strong> Strengthened understanding of authentication patterns, data persistence, and web app deployment.</p>
+          </article>
+
+          <article class="case-card">
+            <h3>Human Psychology Password Analyzer</h3>
+            <p><strong>Overview:</strong> A lightweight security awareness tool designed to analyze patterns people commonly use in passwords.</p>
+            <p><strong>Problem and objective:</strong> Move beyond basic length and symbol checks and focus on realistic human behavior patterns that make passwords predictable.</p>
+            <p><strong>Implementation:</strong> Built in HTML, CSS, and JavaScript with a pattern detection engine and scoring flow in the browser.</p>
+            <p><strong>Actual features:</strong> Sequential numbers, common words, repeated characters, predictable years, real-time scoring, strength feedback, and suggestions.</p>
+            <p><strong>Limitation:</strong> It is an educational analysis tool and does not guarantee a password is secure; it highlights patterns and encourages better password habits.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Certifications</p>
+          <h2>Verified learning milestones and project-backed evidence.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card">
+            <img src="assests/certificates/IICT_internship_complition_certificate.jpg" alt="IICT AI/ML internship completion certificate" />
+            <div class="cert-body">
+              <h3>IICT AI/ML Internship Completion Certificate</h3>
+              <p class="issuer">Issued by IICT</p>
+              <p>Completion certificate for internship work in AI and machine learning learning pathways.</p>
+              <a href="assests/certificates/IICT_internship_complition_certificate.jpg" target="_blank" rel="noreferrer">View certificate</a>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <img src="assests/certificates/tryhackme-hacker-holiday-certificate.png" alt="TryHackMe Hacker Holiday completion certificate" />
+            <div class="cert-body">
+              <h3>TryHackMe Hacker Holiday Completion Certificate</h3>
+              <p class="issuer">Issued by TryHackMe</p>
+              <p>Completion badge for the Hacker Holiday challenge path, reflecting hands-on cybersecurity learning.</p>
+              <a href="assests/certificates/tryhackme-hacker-holiday-certificate.png" target="_blank" rel="noreferrer">View certificate</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="cybersecurity-practice" class="section container">
+        <div class="section-heading">
+          <p class="section-kicker">Cybersecurity Practice</p>
+          <h2>Continuous learning across web security, Linux, and hands-on security fundamentals.</h2>
+        </div>
+
+        <div class="practice-layout">
+          <div class="practice-overview">
+            <p>
+              My practice is grounded in the areas I am actively studying: Python web applications,
+              Linux environments, reconnaissance and enumeration, vulnerability awareness, and ethical
+              hacking fundamentals. I am building experience through practical challenges and project work,
+              especially in areas related to web application security and responsible testing methods.
+            </p>
+            <div class="mini-list">
+              <span>Web application security</span>
+              <span>Linux fundamentals</span>
+              <span>Networking concepts</span>
+              <span>TryHackMe learning</span>
+              <span>Ethical hacking basics</span>
+              <span>Hands-on security practice</span>
+            </div>
+          </div>
+
+          <div class="practice-card">
+            <h3>Current focus</h3>
+            <ul>
+              <li>Understanding how web apps handle authentication and sessions</li>
+              <li>Learning security weaknesses in application logic and user flows</li>
+              <li>Practicing Linux and networking skills in a practical context</li>
+              <li>Improving research, analysis, and documentation through project work</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container contact-section">
+        <div class="section-heading">
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s connect for opportunities, collaboration, or learning.</h2>
+        </div>
+
+        <div class="contact-panel">
+          <a href="mailto:arzkhudia@gmail.com" class="contact-link">
+            <span>✉</span>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/arz-kumar-399871344" target="_blank" rel="noreferrer" class="contact-link">
+            <span>in</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/arzkhudia09-jpg" target="_blank" rel="noreferrer" class="contact-link">
+            <span>⌘</span>
+            GitHub
+          </a>
+          <a href="assests/resume.pdf" target="_blank" rel="noreferrer" class="contact-link">
+            <span>↗</span>
+            Resume
+          </a>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Designed and built to showcase practical learning, security interest, and application-building work.</p>
+      </div>
+    </footer>
+  </body>
 </html>
